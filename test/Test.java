@@ -24,7 +24,7 @@ class Test {
 	//	driver.quit();
 	}
 	
-	@org.junit.jupiter.api.Test
+	@org.junit.Test
 	public void test() {
 	//	fail("Not yet implemented");
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Abeer\\Downloads\\geckodriver.exe");
