@@ -1,13 +1,13 @@
 <project default="compile">
-<property name="src.java.dir" location="./src/najah/edu"/>
+<property name="src.java.dir" location="./test"/>
 <property name="result.dir" location="./target"/>
 <property name="result.javaclasses.dir" location="${result.dir}/classes"/>
 <path id="NecessaryLibraries">
-<pathelement location="./MyLibraries/junit-4.12.jar"/>
+<pathelement location="C:\Users\Abeer\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar"/>
 <!--matcher-->
-<pathelement location="./MyLibraries/hamcrest-core-1.3.jar"/>
-<!--<pathelement
-location="./MyLibraries/selenium-server-standalone-3.8.1.jar"/>-->
+<pathelement location="C:\Users\Abeer\.p2\pool\plugins\org.hamcrest.core_1.3.0.v201303031735.jar"/>
+<pathelement
+location="C:\Users\Abeer\Downloads\selenium-server-standalone-3.11.0.jar"/>
 </path>
 <target name="compile">
 <mkdir dir="${result.javaclasses.dir}"/>
@@ -29,7 +29,7 @@ includeantruntime="false">
 <formatter type="brief" usefile="false"/>
 <batchtest >
 <fileset dir="${result.javaclasses.dir}" >
-<include name="**/* Junit .class"/>
+<include name="Test.class"/>
 </fileset>
 </batchtest>
 </junit>
