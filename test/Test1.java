@@ -3,14 +3,13 @@ package test;
 
 
 import org.junit.After;
-
+import org.junit.Test;
 import org.junit.Before;
-import static org.junit.Assert.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-class Test {
+class Test1 {
 	static WebDriver driver;
 
 	@Before
@@ -24,7 +23,7 @@ class Test {
 	//	driver.quit();
 	}
 	
-	@org.junit.Test
+	@Test
 	public void test() {
 	//	fail("Not yet implemented");
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Abeer\\Downloads\\geckodriver.exe");
